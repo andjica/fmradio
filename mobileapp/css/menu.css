@@ -1,0 +1,275 @@
+
+
+
+#rj-player .player-v3 {
+     background: white; 
+     height: 100%; 
+}
+.barsic-img
+{
+    height: auto;
+    width: 35px;
+    padding: 20px;
+    margin-top: 4px;
+    margin-right: 40px;
+}
+
+#rj-player .player-v3 #rj-cover {
+    float: left;
+    width: 100%;
+    height: 260px;
+-webkit-box-shadow: 24px 22px 21px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: 24px 22px 21px -5px rgba(0,0,0,0.75);
+box-shadow: 24px 22px 21px -5px rgba(0,0,0,0.75);
+    background: #eae4e0;
+    background-clip: content-box;
+    text-align: center;
+}
+.demo-swiper .swiper-slide {
+  font-size: 25px;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+height: 180px;
+  color: #000;
+-webkit-box-shadow: 24px 22px 21px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: 24px 22px 21px -5px rgba(0,0,0,0.75);
+box-shadow: 24px 22px 21px -5px rgba(0,0,0,0.75);
+}
+
+
+.md .navbar {
+    height: 56px;
+    background: white;
+    color: #fff;
+    margin-bottom: -10px;
+    font-size: 20px;
+}
+  
+		#rj-player .player-v3 {
+     background: white; 
+     height: 100%; 
+}
+
+#rj-player .player-v3.player-medium {
+       width: 100%;
+    height: 90px;
+    position: fixed;
+    bottom: 0;
+	   
+}
+.container ul li {
+    color: #AAAAAA;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    line-height: 23px;
+    height: 58px;
+   
+    border-bottom: 1px solid;
+    padding: 12px;
+}
+a [class^="icon-"], a [class*=" icon-"], a [class^="icon-"]:before, a [class*=" icon-"]:before {
+    display: contents;
+    float: right;
+}
+
+#rj-player .player-v3{
+position:absolute;
+}
+.demo-swiper .swiper-slide {
+  font-size: 25px;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+height: 180px;
+  color: #000;
+  box-shadow: none;
+}
+#rj-player .player-v3 .rjp-player-container .jp-play, #rj-player .player-v3 .rjp-player-container .jp-pause {
+    margin-left: 20px;
+    left: 75%;
+	font-size:42px;
+}
+
+#rj-player .rjp-info {
+    width: 183px;
+    margin: 0;
+    font-size: small;
+    display: table-caption;
+	line-height:15px;
+	padding-top: 10px;
+	margin-left:-18px;
+}
+#rj-player .player-v3.player-medium .info {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 83px;
+}
+#rj-player .rjp-player-container .jp-play, #rj-player .rjp-player-container .jp-pause {
+    background: white;
+    color: black;
+    display: block;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 2.2;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    border-radius: 500px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+#rj-player .rjp-trackinfo-container {
+    overflow: hidden;
+     padding: 0px; 
+	 line-height:30px;
+
+	 
+}
+
+.md .padding {
+    padding: 1px!important;
+}
+.md .toolbar:after {
+display:none;
+}
+.md .toolbar-inner {
+    overflow: visible;
+}
+#rj-player .player-v3 .rjp-label {
+    color: white;
+}
+
+#rj-player .player-v3.player-medium .rjp-player-container {
+    width: 100%;
+    height: 80px;
+    position: absolute;
+}
+
+#rj-player .rjp-player-container {
+    height: 80px;
+    overflow: hidden;
+    position: relative;
+    background: transparent;
+}
+
+#rj-djs-list {
+    clear: both;
+    margin-top: 170px;
+    overflow: hidden;
+    width: 100%;
+    margin-left: 0px;
+}
+#rj-player .player-v3 #rj-cover a img {
+    display: inline;
+    width: 100%;
+    height: 360px;
+    vertical-align: baseline;
+}
+.ios .padding {
+    padding: 1px !important;
+}
+#rj-djs-list {
+    clear: both;
+    margin-top: 170px;
+    overflow: hidden;
+    width: 100%;
+    margin-left: 0px;
+}
+
+p{
+
+text-align:center;}
+
+.page-content.infinite-scroll-content{
+  overflow:hidden;
+
+}
+.meni img {
+    width: 100px;
+    height: 50px;
+    display: inline-block;
+    margin-top: -120px;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+
+.swiper-container {
+    margin: 0 auto;
+    position: relative;
+     overflow-x: scroll; 
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+
+.md .toolbar {
+   
+   height: 60px !important;
+   font-size: 14px;
+   top: 0;
+}
+.shadow{
+
+-webkit-box-shadow: 24px 22px 21px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: 24px 22px 21px -5px rgba(0,0,0,0.75);
+box-shadow: 24px 22px 21px -5px rgba(0,0,0,0.75);
+
+}
+.demo-swiper .swiper-slide {
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  background: #fff;
+	width: 177px;
+margin-left:20px;
+    background-position: top;	
+}
+.demo-swiper {
+  margin: 0px 0 35px;
+  font-size: 18px;
+  height: 320px;
+}
+.demo-swiper.demo-swiper-auto .swiper-slide {
+  width: 85%;
+}
+.demo-swiper.demo-swiper-auto .swiper-slide:nth-child(2n) {
+  width: 70%;
+}
+.demo-swiper.demo-swiper-auto .swiper-slide:nth-child(3n) {
+  width: 30%;
+}
+
+#rj-player .player-v3 #rj-cover a img {
+    display: inline;
+    width: 100%;
+    height: 360px;
+    vertical-align: baseline;
+}
+
+.parallax { 
+  /* The image used */
+  background-image: url("images/biz.jpg");
+
+  /* Set a specific height */
+  height: 250px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

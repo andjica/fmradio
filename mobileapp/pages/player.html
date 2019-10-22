@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="white">
+ 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.radiojar.com/wrappers/api-plugins/v1/css/player.css">
+<link rel="stylesheet" href="https://www.radiojar.com/wrappers/api-plugins/v1/css/djs-list.css">
+
+
+
+    <!-- Your app title -->
+    <title>My App</title>
+    <!-- Path to Framework7 Library CSS -->
+     
+    <link rel="stylesheet" href="framework7/css/framework7.min.css">
+
+    <!-- Path to Fontawesome style-->
+    <link rel="stylesheet" href="css/font-aw/css/all.css">
+    <link rel="stylesheet" href="css/font-aw/css/fontawesome.css">
+   
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/app.css">
+
+    <!-- Chart.JS -->
+    
+
+  </head>
+  <body>
+    <!-- App root element -->
+    <div id="app">
+    <div class="panel panel-left panel-reveal"  style="width:380px; background: #1B1B1B; ">
+            <div class="content-block">
+           
+              <a class="panel-close" href="/index/" style="margin-left:40px;">
+			  <img src="../images/crosic.png" style="    height: 32px;
+    margin-top: 20px;">
+             </a>
+           
+              <div class="list no-hairlines-between">
+                    <ul style="margin-top:42px; margin-left:40px;">
+                           <li class="padding  "><a class=" link external" href="./reviews.html" style="color: white; padding: 6px!important;"> Home</a></li>
+                            <li class="padding "><a class=" link external" href="./video.html" style="color: white; padding: 6px!important;"> Video stream</a></li>
+                            <li class="padding "><a class=" link external" href="./filter.html" style="color: white; padding: 6px!important;"> Playlist</a></li>
+            <!--<li class="padding "><a class=" link external" href="./menu2.html" style="color: white; 6px!important;"> Nieuwe Muziek</a></li>-->							
+                            <li class="padding"><a class=" link external" href="./menu.html" style="color: white; padding: 6px!important;"> Hiphop nieuws</a></li>
+							<li class="padding"><a class=" link external" href="#" style="color: white; padding: 6px!important;"> Privacy</a></li>
+				   </ul>
+                </div>
+                
+            </div>
+            <img src="../images/IcontvLogoWhite.svg" style="height: 120px;
+            height: 400px;
+            transform: rotate(10deg);
+            width: 100%;">
+          </div> 
+             <!-- Statusbar overlay -->
+    
+
+     
+      <!-- Statusbar overlay -->
+      <div class="statusbar"></div>
+
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+      
+      
+
+  
+
+
+
+          <!-- Scrollable page content -->
+        <div class="page-content infinite-scroll-content" style="background-color:white;">
+         <div class="toolbar toolbar-top">
+					<div class="toolbar-inner" style="background:#1B1B1B;     height: 60px !important;">
+					   <a class="panel-open" style="    margin-left: 10px;" href="#" data-panel="left">
+					  <img src="../images/barsic.png"  class="left" style="height: auto;
+                                width: 35px;
+                                padding: 20px;
+                                margin-top: 4px;
+                                margin-right: 40px;"/></a>
+                                    <center>
+                                    <h3 style="    margin-left: -35px;
+                                font-size: 20px;
+                                margin-top: 26px;
+                                color: white;
+                                opacity: 1.9;">Hiphop Nieuws</h3>
+                                    </center>
+
+                        <a class="link right"><img src="../images/jatoch.png" style="  
+                                width: auto;
+                            height: 31px;
+                            float: right;
+                            position: relative;
+                            margin-top: -1px;
+                            z-index: -1000;
+                            padding: 10px;
+                            margin-right: -10px;
+
+                        
+                        "></a>
+					  
+					</div>
+				  </div>
+           <div class="page" data-name="menu">
+      
+            
+               <div class="page-content" style="background-color:white; overflow:none;">
+                 
+                
+
+                    <div id="rj-player" style="margin-top:100px;">
+    
+                            <audio id="audio" preload="auto" tabindex="0" controls="" type="audio/mpeg">
+                                <source type="audio/mp3" src="">
+                            </audio>
+                            <ul id="playlist">
+                                <li class="active">
+                                    <a href="" id="active-link"></a>
+                                </li>
+                                <div id="all-songs">
+                                       
+                                </div>
+                               
+                        
+                            </ul>
+                    
+                      </div>
+                    
+                   
+                    </div>
+
+                    <!-- And somewhere in DOM -->
+
+                    
+                    </div>
+
+
+
+ </div>
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+              </div>
+
+            </div>
+
+            </div>
+            </div>
+            
+         
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+</div> 
+
+
+
+    
+    <!-- Path to Framework7 Library JS-->
+	
+    <script type="text/javascript" src="framework7/js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/app.js"></script>
+    <script defer src="css/font-aw/js/all.js"></script>
+    <script defer src="css/font-aw/js/fontawesome.js"></script>   
+    <script type="text/javascript" src="../js/main-radio.js"></script>
+      <script>
+      var app = new Framework7();
+
+        var $$ = Dom7;
+
+        // DOM events for About popup
+        $$('.popup-about').on('popup:open', function (e, popup) {
+        console.log('About popup open');
+        });
+        $$('.popup-about').on('popup:opened', function (e, popup) {
+        console.log('About popup opened');
+        });
+
+        // Create dynamic Popup
+        var dynamicPopup = app.popup.create({
+        content: '<div class="popup">'+
+                    '<div class="block">'+
+                        '<p>Popup created dynamically.</p>'+
+                        '<p><a href="#" class="link popup-close">Close me</a></p>'+
+                    '</div>'+
+                    '</div>',
+        // Events
+        on: {
+            open: function (popup) {
+            console.log('Popup open');
+            },
+            opened: function (popup) {
+            console.log('Popup opened');
+            },
+        }
+        });
+        // Events also can be assigned on instance later
+        dynamicPopup.on('close', function (popup) {
+        console.log('Popup close');
+        });
+        dynamicPopup.on('closed', function (popup) {
+        console.log('Popup closed');
+        });
+
+        // Open dynamic popup
+        $$('.dynamic-popup').on('click', function () {
+        dynamicPopup.open();
+        });
+
+        // Create Popup with swipe to close
+        var swipeToClosePopup = app.popup.create({
+        el: '.popup-swipe-to-close',
+        swipeToClose: true,
+        });
+
+        // Create Popup with swipe to close handler
+        var swipeToClosePopup = app.popup.create({
+        el: '.popup-swipe-to-close-handler',
+        swipeToClose: true,
+        swipeHandler: '.my-swipe-to-close-handler',
+        });
+    </script>
+    <script>
+      var app = new Framework7();
+    
+    var $$ = Dom7;
+    
+    // Dom Events
+    $$('.panel-left').on('panel:open', function () {
+      console.log('Panel left: open');
+    });
+    $$('.panel-left').on('panel:opened', function () {
+      console.log('Panel left: opened');
+    });
+
+    
+    // Instance Events
+    
+    // App Events
+    app.on('panelClose', function (panel) {
+      console.log('Panel ' + panel.side + ': close');
+    });
+    app.on('panelClosed', function (panel) {
+      console.log('Panel ' + panel.side + ': closed');
+    });
+    
+    var app = new Framework7();
+    
+    // create searchbar
+    var searchbar = app.searchbar.create({
+    el: '.searchbar',
+    searchContainer: '.list',
+    searchIn: '.item-title',
+    on: {
+    search(sb, query, previousQuery) {
+    console.log(query, previousQuery);
+    }
+    }
+    });
+
+    $$('.moj-radio').on('click', function()
+    {
+      var radios = $$('.moj-radio');
+
+      $$( ".krug-p" ).each(function(index) {
+        $$(this).css('color', '#505050');
+        // $$(this).classList.remove('checked-font');
+      });
+
+      $$( ".fa-check" ).each(function(index) {
+        $$(this).remove();
+      });
+
+      var krugovi = $$(".krug");
+
+      for (var i = 0; i < krugovi.length; i++)
+      {
+        krugovi[i].classList.remove('checked-icon');
+      }
+
+      for (var i = 0; i < radios.length; i++)
+      {
+         
+         radios[i].classList.remove('checked');
+      }
+
+      $$(this).addClass('checked');
+      $$(this).children().eq(0).addClass('checked-icon');
+      $$(this).children().eq(0).prepend('<i class="fas fa-check icon-cekirano"></i>');
+      $$(this).children().eq(1).css('color', '#ea5c24');
+      // $$(this).children().eq(1).classList.add('checked-font');
+    })
+  
+    </script>
+
+            
+
+
+<style>
+
+
+
+#rj-player .player-v3 {
+     background: white; 
+     height: 100%; 
+}
+
+#rj-player .player-v3 #rj-cover {
+    float: left;
+    width: 100%;
+    height: 260px;
+-webkit-box-shadow: 24px 22px 21px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: 24px 22px 21px -5px rgba(0,0,0,0.75);
+box-shadow: 24px 22px 21px -5px rgba(0,0,0,0.75);
+    background: #eae4e0;
+    background-clip: content-box;
+    text-align: center;
+}
+.demo-swiper .swiper-slide {
+  font-size: 25px;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+height: 180px;
+  color: #000;
+-webkit-box-shadow: 24px 22px 21px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: 24px 22px 21px -5px rgba(0,0,0,0.75);
+box-shadow: 24px 22px 21px -5px rgba(0,0,0,0.75);
+}
+
+
+.md .navbar {
+    height: 56px;
+    background: white;
+    color: #fff;
+    margin-bottom: -10px;
+    font-size: 20px;
+}
+  
+		#rj-player .player-v3 {
+     background: white; 
+     height: 100%; 
+}
+
+#rj-player .player-v3.player-medium {
+       width: 100%;
+    height: 90px;
+    position: fixed;
+    bottom: 0;
+	   
+}
+.container ul li {
+    color: #AAAAAA;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    line-height: 23px;
+    height: 58px;
+   
+    border-bottom: 1px solid;
+    padding: 12px;
+}
+a [class^="icon-"], a [class*=" icon-"], a [class^="icon-"]:before, a [class*=" icon-"]:before {
+    display: contents;
+    float: right;
+}
+
+#rj-player .player-v3{
+position:absolute;
+}
+.demo-swiper .swiper-slide {
+  font-size: 25px;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+height: 180px;
+  color: #000;
+  box-shadow: none;
+}
+#rj-player .player-v3 .rjp-player-container .jp-play, #rj-player .player-v3 .rjp-player-container .jp-pause {
+    margin-left: 20px;
+    left: 75%;
+	font-size:42px;
+}
+
+#rj-player .rjp-info {
+    width: 183px;
+    margin: 0;
+    font-size: small;
+    display: table-caption;
+	line-height:15px;
+	padding-top: 10px;
+	margin-left:-18px;
+}
+#rj-player .player-v3.player-medium .info {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 83px;
+}
+#rj-player .rjp-player-container .jp-play, #rj-player .rjp-player-container .jp-pause {
+    background: white;
+    color: black;
+    display: block;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 2.2;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    border-radius: 500px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+#rj-player .rjp-trackinfo-container {
+    overflow: hidden;
+     padding: 0px; 
+	 line-height:30px;
+
+	 
+}
+
+.md .padding {
+    padding: 1px!important;
+}
+.md .toolbar:after {
+display:none;
+}
+.md .toolbar-inner {
+    overflow: visible;
+}
+#rj-player .player-v3 .rjp-label {
+    color: white;
+}
+
+#rj-player .player-v3.player-medium .rjp-player-container {
+    width: 100%;
+    height: 80px;
+    position: absolute;
+}
+
+#rj-player .rjp-player-container {
+    height: 80px;
+    overflow: hidden;
+    position: relative;
+    background: transparent;
+}
+
+#rj-djs-list {
+    clear: both;
+    margin-top: 170px;
+    overflow: hidden;
+    width: 100%;
+    margin-left: 0px;
+}
+#rj-player .player-v3 #rj-cover a img {
+    display: inline;
+    width: 100%;
+    height: 360px;
+    vertical-align: baseline;
+}
+.ios .padding {
+    padding: 1px !important;
+}
+#rj-djs-list {
+    clear: both;
+    margin-top: 170px;
+    overflow: hidden;
+    width: 100%;
+    margin-left: 0px;
+}
+
+p{
+
+text-align:center;}
+
+.page-content.infinite-scroll-content{
+  overflow:hidden;
+
+}
+.meni img {
+    width: 100px;
+    height: 50px;
+    display: inline-block;
+    margin-top: -120px;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+
+.swiper-container {
+    margin: 0 auto;
+    position: relative;
+     overflow-x: scroll; 
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+
+.md .toolbar {
+   
+   height: 60px !important;
+   font-size: 14px;
+   top: 0;
+}
+.shadow{
+
+-webkit-box-shadow: 24px 22px 21px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: 24px 22px 21px -5px rgba(0,0,0,0.75);
+box-shadow: 24px 22px 21px -5px rgba(0,0,0,0.75);
+
+}
+.demo-swiper .swiper-slide {
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  background: #fff;
+	width: 177px;
+margin-left:20px;
+    background-position: top;	
+}
+.demo-swiper {
+  margin: 0px 0 35px;
+  font-size: 18px;
+  height: 320px;
+}
+.demo-swiper.demo-swiper-auto .swiper-slide {
+  width: 85%;
+}
+.demo-swiper.demo-swiper-auto .swiper-slide:nth-child(2n) {
+  width: 70%;
+}
+.demo-swiper.demo-swiper-auto .swiper-slide:nth-child(3n) {
+  width: 30%;
+}
+
+#rj-player .player-v3 #rj-cover a img {
+    display: inline;
+    width: 100%;
+    height: 360px;
+    vertical-align: baseline;
+}
+
+.parallax { 
+  /* The image used */
+  background-image: url("images/biz.jpg");
+
+  /* Set a specific height */
+  height: 250px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+</style>

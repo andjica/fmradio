@@ -1,0 +1,815 @@
+[06-Aug-2019 23:04:34 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-realises.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:04:34 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending.php(11): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:04:34 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-artist.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:04:34 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:04:34 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-upcoming-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:04:45 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-videos.php(9): executeQuery('SELECT * FROM v...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:04:50 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/news-all.php(9): executeQuery('SELECT * FROM n...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:04:50 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/news-one.php(9): executeQuery('SELECT * FROM n...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:04:51 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-all-songs.php(14): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:04:52 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-realises.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:04:52 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending.php(11): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:04:52 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:04:52 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-artist.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:04:52 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-upcoming-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:05:03 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-realises.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:05:03 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-artist.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:05:03 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:05:03 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending.php(11): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:05:03 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-upcoming-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:05:51 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending.php(11): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:05:51 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-realises.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:05:51 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:05:51 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-artist.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:05:51 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-upcoming-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:06:51 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-realises.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:06:51 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending.php(11): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:06:51 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-artist.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:06:51 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-upcoming-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:06:51 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:07:46 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-realises.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:07:46 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-upcoming-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:07:46 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending.php(11): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:07:46 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-artist.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:07:46 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:08:31 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-realises.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:08:31 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending.php(11): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:08:31 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-artist.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:08:31 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:08:31 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-upcoming-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:10:51 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-realises.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:10:51 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-upcoming-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:10:51 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:10:51 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-artist.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:10:51 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending.php(11): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:14:04 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-realises.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:14:04 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending.php(11): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:14:04 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-artist.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:14:04 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:14:04 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-upcoming-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:14:42 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-artist.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:14:42 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-realises.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:14:42 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending.php(11): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:14:42 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-upcoming-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:14:42 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:15:22 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-realises.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:15:22 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-artist.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:15:23 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:15:23 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending.php(11): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:15:23 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-upcoming-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:15:53 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-realises.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:15:53 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending.php(11): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:15:53 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:15:53 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-artist.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:15:53 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-upcoming-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:18:43 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending.php(11): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:18:43 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-artist.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:18:43 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-realises.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:18:43 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:18:43 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-upcoming-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:22:31 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-realises.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:22:31 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-upcoming-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:22:31 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:22:31 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-artist.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:22:31 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending.php(11): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:25:37 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-realises.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:25:37 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-artist.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:25:37 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-upcoming-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:25:37 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending.php(11): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:25:37 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:26:30 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-upcoming-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:26:30 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-realises.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:26:30 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending.php(11): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:26:30 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:26:30 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-artist.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:27:17 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-realises.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:27:17 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending.php(11): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:27:17 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:27:17 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-upcoming-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:27:17 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-artist.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:27:21 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-realises.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:27:21 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending.php(11): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:27:21 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-artist.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:27:21 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:27:21 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-upcoming-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:27:28 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/news-one.php(9): executeQuery('SELECT * FROM n...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:27:28 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/news-all.php(9): executeQuery('SELECT * FROM n...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:27:33 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending.php(11): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:27:33 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-realises.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:27:33 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-artist.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:27:33 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-upcoming-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:27:33 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:28:45 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-realises.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:28:45 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending.php(11): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:28:45 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-artist.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:28:45 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:28:45 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-upcoming-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:28:46 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-realises.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:28:46 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending.php(11): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:28:46 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:28:46 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-artist.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:28:46 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-upcoming-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:31:35 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-realises.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:31:35 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending.php(11): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:31:35 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-artist.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:31:36 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:31:36 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-upcoming-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:31:47 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/news-one.php(9): executeQuery('SELECT * FROM n...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:31:47 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/news-all.php(9): executeQuery('SELECT * FROM n...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:31:48 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending.php(11): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:31:48 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-realises.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:31:48 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-artist.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:31:48 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:31:48 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-upcoming-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:32:20 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-realises.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:32:20 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending.php(11): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:32:20 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:32:20 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-artist.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:32:20 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-upcoming-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:32:25 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-realises.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:32:25 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:32:25 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-artist.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:32:25 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending.php(11): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:32:25 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-upcoming-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:32:51 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-realises.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:32:51 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:32:51 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-artist.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:32:51 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending.php(11): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:32:51 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-upcoming-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:33:46 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-realises.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:33:46 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:33:46 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-upcoming-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:33:46 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending.php(11): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:33:46 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-artist.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[06-Aug-2019 23:36:01 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:27
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-artist.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 27
+[06-Aug-2019 23:36:01 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:27
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-upcoming-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 27
+[06-Aug-2019 23:36:01 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:27
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending.php(11): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 27
+[06-Aug-2019 23:36:01 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:27
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-trending-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 27
+[06-Aug-2019 23:36:01 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:27
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/get-realises.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 27
+[21-Aug-2019 17:16:30 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/news-one.php(9): executeQuery('SELECT * FROM n...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[21-Aug-2019 17:16:30 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/php/news-all.php(8): executeQuery('SELECT * FROM n...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/config/connection.php on line 22
+[22-Sep-2019 01:30:03 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/moderne-woningen/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/moderne-woningen/php/get-videos.php(9): executeQuery('SELECT * FROM v...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/moderne-woningen/config/connection.php on line 22
+[22-Sep-2019 01:30:21 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/moderne-woningen/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/moderne-woningen/php/get-realises.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/moderne-woningen/config/connection.php on line 22
+[22-Sep-2019 01:30:21 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/moderne-woningen/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/moderne-woningen/php/get-trending-artist.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/moderne-woningen/config/connection.php on line 22
+[22-Sep-2019 01:30:21 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/moderne-woningen/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/moderne-woningen/php/get-trending.php(11): executeQuery('SELECT s.id AS ...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/moderne-woningen/config/connection.php on line 22
+[22-Sep-2019 01:30:21 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/moderne-woningen/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/moderne-woningen/php/get-trending-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/moderne-woningen/config/connection.php on line 22
+[22-Sep-2019 01:30:21 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/moderne-woningen/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/moderne-woningen/php/get-upcoming-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/moderne-woningen/config/connection.php on line 22
+[22-Sep-2019 01:30:34 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/moderne-woningen/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/moderne-woningen/php/get-realises.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/moderne-woningen/config/connection.php on line 22
+[22-Sep-2019 01:30:34 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/moderne-woningen/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/moderne-woningen/php/get-trending-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/moderne-woningen/config/connection.php on line 22
+[22-Sep-2019 01:30:34 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/moderne-woningen/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/moderne-woningen/php/get-trending-artist.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/moderne-woningen/config/connection.php on line 22
+[22-Sep-2019 01:30:34 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/moderne-woningen/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/moderne-woningen/php/get-trending.php(11): executeQuery('SELECT s.id AS ...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/moderne-woningen/config/connection.php on line 22
+[22-Sep-2019 01:30:34 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/moderne-woningen/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/moderne-woningen/php/get-upcoming-albums.php(13): executeQuery('SELECT c.name A...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/moderne-woningen/config/connection.php on line 22
+[22-Sep-2019 01:30:52 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/moderne-woningen/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/moderne-woningen/php/news-one.php(9): executeQuery('SELECT * FROM n...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/moderne-woningen/config/connection.php on line 22
+[22-Sep-2019 01:30:52 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/y2dv23u3x36f/public_html/moderne-woningen/config/connection.php:22
+Stack trace:
+#0 /home/y2dv23u3x36f/public_html/moderne-woningen/php/news-all.php(8): executeQuery('SELECT * FROM n...')
+#1 {main}
+  thrown in /home/y2dv23u3x36f/public_html/moderne-woningen/config/connection.php on line 22

@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="white">
+ 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="//www.radiojar.com/wrappers/api-plugins/v1/css/player.css">
+<link rel="stylesheet" href="//www.radiojar.com/wrappers/api-plugins/v1/css/djs-list.css">
+
+
+
+    <!-- Your app title -->
+    <title>My App</title>
+    <!-- Path to Framework7 Library CSS -->
+     
+    <link rel="stylesheet" href="framework7/css/framework7.min.css">
+
+    <!-- Path to Fontawesome style-->
+    <link rel="stylesheet" href="css/font-aw/css/all.css">
+    <link rel="stylesheet" href="css/font-aw/css/fontawesome.css">
+   
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/app.css">
+
+    <!-- Chart.JS -->
+    
+
+  </head>
+  <body>
+    <!-- App root element -->
+    <div id="app">
+       <div class="panel panel-left panel-reveal"  style="width:380px; background: #1B1B1B; ">
+            <div class="content-block">
+           
+              <a class="panel-close" href="/index/" style="margin-left:40px;">
+			  <img src="../images/crosic.png" style="    height: 32px;
+    margin-top: 20px;">
+             </a>
+           
+              <div class="list no-hairlines-between">
+                    <ul style="margin-top:42px; margin-left:40px;">
+                           <li class="padding  "><a class=" link external" href="./reviews.html" style="color: white; padding: 6px!important;"> Home</a></li>
+                            <li class="padding "><a class=" link external" href="./video.html" style="color: white; padding: 6px!important;"> Video stream</a></li>
+                            <li class="padding "><a class=" link external" href="./filter.html" style="color: white; padding: 6px!important;"> Playlist</a></li>
+            <!--<li class="padding "><a class=" link external" href="./menu2.html" style="color: white; 6px!important;"> Nieuwe Muziek</a></li>-->							
+                            <li class="padding"><a class=" link external" href="./menu.html" style="color: white; padding: 6px!important;"> Hiphop nieuws</a></li>
+							<li class="padding"><a class=" link external" href="#" style="color: white; padding: 6px!important;"> Privacy</a></li>
+				   </ul>
+                </div>
+                
+            </div>
+            <img src="../images/IcontvLogoWhite.svg" style="height: 120px;
+            height: 400px;
+            transform: rotate(10deg);
+            width: 100%;">
+          </div> 
+             <!-- Statusbar overlay -->
+    
+
+     
+      <!-- Statusbar overlay -->
+      <div class="statusbar"></div>
+
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+      
+      
+
+  
+
+
+
+          <!-- Scrollable page content -->
+        <div class="page-content infinite-scroll-content" style="background-color:white;">
+         <div class="toolbar toolbar-top" style="">
+					<div class="toolbar-inner" style="background:#1B1B1B;     height: 60px !important;">
+					   <a class="panel-open" href="#" style="    margin-left: 10px;" data-panel="left">
+					  <img src="../images/barsic.png"  class="left" style="height: auto;
+    width: 35px;
+    padding: 20px;
+    margin-top: 4px;
+    margin-right: 40px;"/></a>
+		<center>
+		<h3 style="    margin-left: -44px;
+    font-size: 20px;
+    margin-top: 26px;
+    color: white;
+    opacity: 1.9;">Radio livestream</h3>
+		</center>
+
+ <a class="link right"><img src="../images/jatoch.png" style="  
+        width: auto;
+    height: 31px;
+    float: right;
+    position: relative;
+    margin-top: -1px;
+    z-index: -1000;
+    padding: 0px;
+
+ 
+"></a>
+					  
+					</div>
+				  </div>
+           <div class="page" data-name="menu">
+      
+            
+               <div class="page-content" style="background-color:#1b1b1b; overflow:none;">
+                 
+                    
+                      
+                  
+
+
+<center>
+<img src="../images/jatoch.png" style="    height: 20%;
+    width: 68%;
+    margin-top: 100px;
+"/>
+</center>
+<h3 style="    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-style: unset;
+    font-weight: bolder;">ICON TV Jouw favoriete muziek, Bij ons!</h3>
+
+  <div class="toolbar-bottom" style="position: fixed;">
+  <div id="rj-player">
+ <div class="player-v3 player-medium">
+   
+    
+  
+  <div class="info">
+   <div class="rjp-trackinfo-container">
+   <img src="../images/IconradioLogo.svg" class="col-33" style="height:91px; float:left;"/>
+    <h4 class="rjp-label">Now playing:</h4>
+    <p id="trackInfo" class="rjp-info col-33"></p>
+   </div>
+   <div class="rjp-player-container">
+    <div id="rjp-radiojar-player"></div>
+    <div id="rj-player-controls" class="rj-player-controls">
+     <div class="jp-gui jp-interface">
+      <div class="jp-controls">
+      <a href="javascript:;" style="display:block; margin-top: -10px; height: 84px;     margin-left: 13px;" class="jp-play col-33" title="Play">&nbsp;<i class="icon-play"></i></a>
+       <a href="javascript:;" style="display:none; margin-top: -10px; height: 84px;     margin-left: 13px;" class="jp-pause" title="Pause"><i class="icon-pause"></i></a>
+       
+      </div>
+     </div>
+    </div>
+    
+   </div>
+  </div>
+ </div>
+</div>
+</div>
+ </div>
+<div class="row">
+<!--<div class="toolbar toolbar-bottom" style="margin-top: -50px;">
+     <div class="toolbar-inner col-100" style="background:#343333; height:50px;     position: fixed;">
+		<a class="link external col-20" style="width: 20%;  display: flow-root; " href="./menu2.html"><center style="margin-top: -5px;"><i class="fa fa-fire" style="color:white;    "></i></center><p style=" color:white;  font-size: 10px; margin-top: -24px;  text-align: center;">DISCOVER</p></a>
+	  	  
+		<a class="link external col-20" style="width: 20%;  display: flow-root; " href="./video.html"><center style="margin-top: -5px;"><i class="fa fa-video"  style="color:white; "></i></center><p style=" color:white; font-size: 10px; margin-top: -24px;  text-align: center;">VIDEO</p></a>
+	 
+		<a class="link external col-20" style="width: 20%;  display: flow-root; " href="./radio.html"><center style="margin-top: -5px;"><i class="fa fa-play" style="color:white;    "></i></center><p style=" color:white;  font-size: 10px; margin-top: -24px;  text-align: center;">RADIO</p></a>
+		
+		<a class="link external col-20" style="width: 20%;  display: flow-root; " href="./options.html"><center style="margin-top: -5px;"><i class="fa fa-newspaper" style="color:white;    "></i></center><p style=" color:white;  font-size: 10px; margin-top: -24px;  text-align: center;">NEWS</p></a>
+     
+		<a class="link external col-20" style="width: 20%;  display: flow-root; " href="./library.html"><center style="margin-top: -5px;"><i class="fa fa-book" style="color:white;    "></i></center><p style=" color:white;  font-size: 10px; margin-top: -24px;  text-align: center;">LIBRARY</p></a>
+
+    </div>
+  </div>-->
+
+ 
+</div>
+
+<div class="popup popup-about">
+    <div class="toolbar toolbar-top" style="">
+					<div class="toolbar-inner" style="background:#1B1B1B;     height: 60px !important;">
+					   <a class="panel-open  link external" href="./menu.html" >
+					  <img src="../images/crosic.png" class="left" style="height: auto;
+    width: 35px;
+    padding: 0px;
+    margin-top: 4px;
+    margin-right: 40px;
+    margin-left: 10px;"/></a>
+		<center>
+		<h3 style="    margin-left: -44px;
+    font-size: 20px;
+    margin-top: 26px;
+    color: white;
+    opacity: 1.9;">Radio livestream</h3>
+		</center>
+
+ <a class="link right"><img src="../images/jatoch.png" style="  
+        width: auto;
+    height: 31px;
+    float: right;
+    position: relative;
+    margin-top: -1px;
+    z-index: -1000;
+    padding: 20px;
+
+ 
+"></a>
+					  
+					</div>
+				  </div>
+  <div class="block">
+    
+    <!-- Close Popup -->
+    
+    <img src="" id="img-new" style="width: 100%;">
+    <h3 id="title-new" style=" text-align: center; position: absolute;
+    margin-top: -57px;
+    width: 100%;
+    background: #2F2929;
+    height: 50px;
+    line-height: 51px;
+    color: white;
+    filter: opacity(0.7);"></h3>
+    <p id="desc-new" style=" font-size: 100%; height:100%;  padding: 10px;
+    text-align: justify; "></p>
+  </div>
+ 
+</div>
+
+
+
+
+
+
+
+ 
+
+ 
+              </div>
+
+            </div>
+
+            </div>
+            </div>
+            
+         
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+</div> 
+
+
+
+    
+    <!-- Path to Framework7 Library JS-->
+	
+    <script type="text/javascript" src="framework7/js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+  <script type="text/javascript" src="js/app.js"></script>
+    <script defer src="css/font-aw/js/all.js"></script>
+    <script defer src="css/font-aw/js/fontawesome.js"></script>   
+    <script>
+      app.request.post('../php/news-one.php', function(data){
+        var newsOne = JSON.parse(data);
+        console.log(newsOne);
+
+        var text = ``;
+        newsOne.forEach(function(element)
+        {
+          text+= `
+          <div class="player-v31 player-large1">
+            <div id="rj-cover12" style="  margin-bottom: 22px;  margin-top: -59px;  z-index: -1;   position: absolute;">
+              <a href="" class="paralax">
+            <img src="../webapp/${element['image']}" style="     height: 343px;    margin-top: 96px;  width: 100%;"/></a>
+            </div>
+          </div>
+          
+          <div id="overlay">
+          <a href="#" style="color:white;" data-popup=".my-popup" class="popup-open">
+          <h2 style="   height: 50px;
+    text-align: center;
+    line-height: 53px;
+    background: #2F2929;
+    filter: opacity(0.7);
+    position: absolute;
+    width: 100%;
+    margin-top: 330px;
+    font-weight: 500;
+    color: white;">${element['title']}<h2>
+              <p style="display:none;">${element['description']}</p>
+              
+          </a>
+        
+          </div>
+        `;
+        });
+        document.getElementById('first').innerHTML=text;
+      });
+      app.request.post('../php/news-all.php', function(data){
+        var all = JSON.parse(data);
+        console.log(all);
+        var text = ``;
+        all.forEach(function(element)
+        {
+          text+= `
+          <div class="col-40"><img src="../webapp/${element['image']}" style="    width: 143px;   height: 150px;     margin-left: 10px;"></div>
+
+            <div class="col-60"  style="padding-left:0px; padding-right:10px; padding-left:2px;    margin-bottom: 10px;">
+            <h4 style="margin-bottom:-10px; letter-spacing:1px;
+    MARGIN-TOP: 5PX;     text-align: left;">${element['title']}</h4>
+
+            <p style="text-align: left; COLOR:GRAY;font-size: 11px;      text-align: justify;">${element['description']}</p>
+            <div class="row" style="      MARGIN-TOP: -24PX;
+      display: inline-flex; line-height: normal; float: left;">
+              <div class="col-22">
+              <h5 style="    float: left;">IconTV News</h5>
+                </div>
+                <div class="col-22">
+            <a class="link-news link popup-open" href="#"  data-id="${element['id']}" data-popup=".popup-about" style="color:#951111; float: left;   margin-top: 17px;  margin-left: 20px; ">Read more</a>
+            </div>
+            </div>
+            </div>
+           
+        `;
+        });
+        document.getElementById('all').innerHTML=text;
+      });
+
+      $$(document).on("click", ".link-news", function(){
+
+        var catchId = $$(this).data('id');
+        
+        console.log(catchId);
+
+        app.request.post("http://mijnautoadverteren.nl/moderne-woningen/php/get-one-new.php", {catchId : catchId}, function(data){
+          var id = JSON.parse(data);
+            console.log(data);
+            var image = id.image;
+            var path = "../webapp/";
+            document.getElementById('img-new').src = path+image;
+           
+            $$('#title-new').html(id.title);
+           $$('#desc-new').html(id.description);
+
+        });
+      });
+
+    </script>
+    <script>
+      var app = new Framework7();
+
+var $$ = Dom7;
+
+// DOM events for About popup
+$$('.popup-about').on('popup:open', function (e, popup) {
+  console.log('About popup open');
+});
+$$('.popup-about').on('popup:opened', function (e, popup) {
+  console.log('About popup opened');
+});
+
+// Create dynamic Popup
+var dynamicPopup = app.popup.create({
+  content: '<div class="popup">'+
+              '<div class="block">'+
+                '<p>Popup created dynamically.</p>'+
+                '<p><a href="#" class="link popup-close">Close me</a></p>'+
+              '</div>'+
+            '</div>',
+  // Events
+  on: {
+    open: function (popup) {
+      console.log('Popup open');
+    },
+    opened: function (popup) {
+      console.log('Popup opened');
+    },
+  }
+});
+// Events also can be assigned on instance later
+dynamicPopup.on('close', function (popup) {
+  console.log('Popup close');
+});
+dynamicPopup.on('closed', function (popup) {
+  console.log('Popup closed');
+});
+
+// Open dynamic popup
+$$('.dynamic-popup').on('click', function () {
+  dynamicPopup.open();
+});
+
+// Create Popup with swipe to close
+var swipeToClosePopup = app.popup.create({
+  el: '.popup-swipe-to-close',
+  swipeToClose: true,
+});
+
+// Create Popup with swipe to close handler
+var swipeToClosePopup = app.popup.create({
+  el: '.popup-swipe-to-close-handler',
+  swipeToClose: true,
+  swipeHandler: '.my-swipe-to-close-handler',
+});
+    </script>
+    <script>
+      var app = new Framework7();
+    
+    var $$ = Dom7;
+    
+    // Dom Events
+    $$('.panel-left').on('panel:open', function () {
+      console.log('Panel left: open');
+    });
+    $$('.panel-left').on('panel:opened', function () {
+      console.log('Panel left: opened');
+    });
+
+    
+    // Instance Events
+    
+    // App Events
+    app.on('panelClose', function (panel) {
+      console.log('Panel ' + panel.side + ': close');
+    });
+    app.on('panelClosed', function (panel) {
+      console.log('Panel ' + panel.side + ': closed');
+    });
+    
+    var app = new Framework7();
+    
+    // create searchbar
+    var searchbar = app.searchbar.create({
+    el: '.searchbar',
+    searchContainer: '.list',
+    searchIn: '.item-title',
+    on: {
+    search(sb, query, previousQuery) {
+    console.log(query, previousQuery);
+    }
+    }
+    });
+
+    $$('.moj-radio').on('click', function()
+    {
+      var radios = $$('.moj-radio');
+
+      $$( ".krug-p" ).each(function(index) {
+        $$(this).css('color', '#505050');
+        // $$(this).classList.remove('checked-font');
+      });
+
+      $$( ".fa-check" ).each(function(index) {
+        $$(this).remove();
+      });
+
+      var krugovi = $$(".krug");
+
+      for (var i = 0; i < krugovi.length; i++)
+      {
+        krugovi[i].classList.remove('checked-icon');
+      }
+
+      for (var i = 0; i < radios.length; i++)
+      {
+         
+         radios[i].classList.remove('checked');
+      }
+
+      $$(this).addClass('checked');
+      $$(this).children().eq(0).addClass('checked-icon');
+      $$(this).children().eq(0).prepend('<i class="fas fa-check icon-cekirano"></i>');
+      $$(this).children().eq(1).css('color', '#ea5c24');
+      // $$(this).children().eq(1).classList.add('checked-font');
+    })
+  
+    </script>
+<script type="text/javascript" src="//www.radiojar.com/wrappers/api-plugins/v1/radiojar-min.js"></script>
+<script>
+  rjq('#rj-djs-list').radiojar('djs', {
+    streamName: "u0510s7hb"
+  });
+</script>
+            
+<script type="text/javascript" src="//www.radiojar.com/wrappers/api-plugins/v1/radiojar-min.js"></script>
+<script>
+ rjq('#rjp-radiojar-player').radiojar('player', {
+  "streamName": "uf6x8w5f81ac",
+  "enableUpdates": true,
+  "defaultImage": "//www.radiojar.com/img/sample_images/Radio_Stations_Avatar_BLUE.png",
+  "autoplay":false
+ });
+ rjq('#rjp-radiojar-player').off('rj-track-load-event');
+ rjq('#rjp-radiojar-player').on('rj-track-load-event', function(event, data) {
+   updateInfo(data);
+   if (data.title != "" || data.artist != "") {
+     rjq('.rjp-trackinfo-container').show();
+     rjq('#trackInfo').html(data.artist + ' - "' + data.title + '"')
+   } else {
+     rjq('.rjp-trackinfo-container').hide();
+   }
+ });
+
+ function updateInfo(data) {
+   if (data.thumb) {
+     rjq('#rj-cover').html('<a href="#"><img src="' + data.thumb + '" alt="" title="" /></a>')
+   } else {
+     rjq('#rj-cover').html('')
+   }
+ }
+</script>
+
+
+
+      <style>
+
+
+
+
+.md .toolbar {
+   
+   height: 60px !important;
+   font-size: 14px;
+   top: 0;
+}
+.ios .padding {
+    padding: 1px !important;
+}
+.page-content.infinite-scroll-content{
+  overflow:hidden;
+
+}
+
+
+.demo-swiper .swiper-slide {
+  font-size: 25px;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+height: 180px;
+  color: #000;
+-webkit-box-shadow: 24px 22px 21px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: 24px 22px 21px -5px rgba(0,0,0,0.75);
+box-shadow: 24px 22px 21px -5px rgba(0,0,0,0.75);
+}
+
+
+.md .navbar {
+    height: 56px;
+    background: white;
+    color: #fff;
+    margin-bottom: -10px;
+    font-size: 20px;
+}
+
+
+p{
+
+text-align:center;}
+.meni img {
+    width: 100px;
+    height: 50px;
+    display: inline-block;
+    margin-top: -120px;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+
+.swiper-container {
+    margin: 0 auto;
+    position: relative;
+     overflow-x: scroll; 
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+.shadow{
+
+-webkit-box-shadow: 24px 22px 21px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: 24px 22px 21px -5px rgba(0,0,0,0.75);
+box-shadow: 24px 22px 21px -5px rgba(0,0,0,0.75);
+
+}
+.demo-swiper .swiper-slide {
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  background: #fff;
+	width: 177px;
+margin-left:20px;
+    background-position: top;	
+}
+.demo-swiper {
+  margin: 0px 0 35px;
+  font-size: 18px;
+  height: 320px;
+}
+.demo-swiper.demo-swiper-auto .swiper-slide {
+  width: 85%;
+}
+.demo-swiper.demo-swiper-auto .swiper-slide:nth-child(2n) {
+  width: 70%;
+}
+.demo-swiper.demo-swiper-auto .swiper-slide:nth-child(3n) {
+  width: 30%;
+}
+
+#rj-player .player-v3{
+position:absolute;
+}
+.demo-swiper .swiper-slide {
+  font-size: 25px;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+height: 180px;
+  color: #000;
+  box-shadow: none;
+}
+#rj-player .player-v3 .rjp-player-container .jp-play, #rj-player .player-v3 .rjp-player-container .jp-pause {
+    margin-left: 20px;
+    left: 75%;
+	font-size:42px;
+}
+
+.md .toolbar-inner {
+    overflow: visible;
+}
+.md .toolbar:after {
+display:none;
+}
+
+.md .padding {
+    padding: 1px!important;
+}
+#rj-player .rjp-info {
+    width: 183px;
+    margin: 0;
+    font-size: small;
+    display: table-caption;
+	line-height:15px;
+	padding-top: 10px;
+	margin-left: -18px;
+}
+#rj-player .player-v3.player-medium .info {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 83px;
+}
+#rj-player .rjp-player-container .jp-play, #rj-player .rjp-player-container .jp-pause {
+    background: white;
+    color: black;
+    display: block;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 2.2;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    border-radius: 500px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+#rj-player .rjp-trackinfo-container {
+    overflow: hidden;
+     padding: 0px; 
+	 line-height:30px;
+	 
+}
+#rj-player .player-v3 .rjp-label {
+    color: white;
+}
+
+#rj-player .player-v3.player-medium .rjp-player-container {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+	bottom: 0;
+}
+
+#rj-player .rjp-player-container {
+    height: 80px;
+    overflow: hidden;
+    position: relative;
+    background: transparent;
+}
+
+#rj-djs-list {
+    clear: both;
+    margin-top: 170px;
+    overflow: hidden;
+    width: 100%;
+    margin-left: 0px;
+}
+
+.ios .toolbar:before {
+    content: '';
+    position: absolute;
+    background-color: transparent;
+    display: block;
+    z-index: 15;
+    top: 0;
+    right: auto;
+    bottom: auto;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+}
+#rj-player .player-v3 #rj-cover a img {
+    display: inline;
+    width: 100%;
+    height: 360px;
+    vertical-align: baseline;
+}
+		
+		
+        .sheet-modal.my-sheet.modal-in {
+    height: 75px !important;
+    background: #f7f7f8;
+    margin-bottom:50px;
+	display:none !important;
+	
+}
+        .md .sheet-modal .toolbar+.sheet-modal-inner {
+         height: 120px !important;
+         margin-top: 10px;
+          }
+        .ios a {
+    color: transparent;
+    border-radius: 11px;
+}
+
+#rj-player .player-v3 {
+     background: white; 
+     height: 100%; 
+}
+
+#rj-player .player-v3.player-medium {
+       width: 100%;
+    height: 90px;
+    position: fixed;
+    bottom: 0;
+	   
+}
+.parallax { 
+  /* The image used */
+  background-image: url("images/biz.jpg");
+
+  /* Set a specific height */
+  height: 250px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+</style>

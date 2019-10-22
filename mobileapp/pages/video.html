@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="white">
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <!-- Your app title -->
+    <title>My App</title>
+    <!-- Path to Framework7 Library CSS -->
+     
+    <link rel="stylesheet" href="../framework7/css/framework7.min.css">
+
+    <!-- Path to Fontawesome style-->
+    <link rel="stylesheet" href="../css/font-aw/css/all.css">
+    <link rel="stylesheet" href="../css/font-aw/css/fontawesome.css">
+   
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/video.css">
+    <link rel="stylesheet" href="../css/reviews.css">
+
+    <!-- Chart.JS -->
+    
+
+  </head>
+  <body>
+    <!-- App root element -->
+    <div id="app">
+        <div class="panel panel-left panel-reveal"  style="width:380px; background: #1B1B1B; ">
+            <div class="content-block">
+           
+              <a class="panel-close" href="/index/" style="margin-left:40px;">
+			  <img src="../images/crosic.png" class="crs">
+             </a>
+           
+              <div class="list no-hairlines-between">
+                    <ul style="margin-top:42px; margin-left:40px;">
+                        <li class="padding  "><a class=" link external" href="./reviews.html" style="color: white; padding: 6px!important;"> Home</a></li>
+                        <li class="padding "><a class=" link external" href="./video.html" style="color: white; padding: 6px!important;"> Video stream</a></li>
+                        <li class="padding "><a class=" link external" href="./filter.html" style="color: white; padding: 6px!important;"> Playlist</a></li>
+                        <li class="padding"><a class=" link external" href="./menu.html" style="color: white; padding: 6px!important;"> Hiphop nieuws</a></li>
+							          <li class="padding"><a class=" link external" href="#" style="color: white; padding: 6px!important;"> Privacy</a></li>
+				            </ul>
+                </div>
+                
+            </div>
+            <img src="../images/IcontvLogoWhite.svg" class="logo">
+          </div> 
+             <!-- Statusbar overlay -->
+    
+
+     
+      <!-- Statusbar overlay -->
+      <div class="statusbar"></div>
+
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+      <div class="page-content infinite-scroll-content" style="background-color:white;">
+         <div class="toolbar toolbar-top">
+					<div class="toolbar-inner" style="background:#1B1B1B;     height: 60px !important;">
+					   <a class="panel-open" href="#" style="    margin-left: 10px;" data-panel="left">
+                  <img src="../images/barsic.png"  class="left left-bars"/></a>
+              <center>
+              <h3 class="video-livestream">Video livestream</h3>
+              </center>
+
+            <a class="link right"><img src="../images/jatoch.png" class="jato"></a>
+					  
+					</div>
+				  </div>
+           <div class="page" data-name="menu">
+              <div class="page-content" style="background-color:black; overflow:none;">
+                  <div class="page">
+                  <div class="page-content" style="background: #1B1B1B; color: white;">
+                    <div class="row" style="margin-top: -68px;">
+                      <div class="fullscreen-bg">
+                        <div id="video">
+
+                        </div>
+                      </div>
+                  </div>
+                 
+          </div>
+        </div>
+        </div>
+       
+    </div>
+    <div class="row bottom col-100" id="bitno">
+        <div id="rj-player" style="  width: 100%;  display: inline-flex;">
+          <img src="../images/IconradioLogo.svg" class="content-left col-33 danny">
+          <div class="content-center col-44 probaja">
+            <p id="songic" style="text-align:center;"></p>
+
+          </div>
+        <audio id="audio" style="width:100px; margin-top:10px;"  preload="auto" tabindex="0" controls="true" type="audio/mpeg">
+            <source type="audio/mp3" src="" id="audio-2">
+        </audio>
+        <ul id="playlist" style="display:none">
+            <li class="active">
+                <a href="" id="active-link"></a>
+            </li>
+            <div id="all-songs">
+                   
+            </div>
+        </ul>
+
+      </div>
+        
+    </div>
+  </div>
+
+      </div>
+</div>
+      
+         
+
+ 
+
+
+
+    
+    <!-- Path to Framework7 Library JS-->
+	
+    <script type="text/javascript" src="../framework7/js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="../js/app.js"></script>
+    <script defer src="../css/font-aw/js/all.js"></script>
+    <script defer src="../css/font-aw/js/fontawesome.js"></script>   
+    <script type="text/javascript" src="../js/main-radio.js"></script>
+    <script type="text/javascript" src="../js/panel.js"></script>
+    <script>
+      app.request.get('http://mijnautoadverteren.nl/moderne-woningen/php/get-videos.php', function(data){
+          console.log(data);
+          var arrayData = JSON.parse(data);
+            var text=``;
+            arrayData.forEach(function(element)
+            {
+              //text+= `<p>${element['artist']}</p>`;
+              text+=`
+            <video style="width: 100%; height: 266px;  background: #1b1b1b;   margin-bottom: 20px;" controls>
+              <source src="http://mijnautoadverteren.nl/moderne-woningen/webapp/${element['url']}">
+              
+             </video>
+            <b style="color:white; margin-left:25px;">${element['song_name']}</b><br>
+            <b style="color:white; margin-left:25px;">${element['artist']}`;
+            })
+            document.getElementById('video').innerHTML = text;
+      });
+    </script>
+
+
+    <style scoped>
+      .video-livestream {
+    margin-left: -30px;
+    font-size: 20px;
+    margin-top: 26px;
+    color: white;
+    opacity: 1.9;
+}
+.md .list ul:before {
+    content: '';
+    position: absolute;
+    background-color: transparent;
+    display: block;
+    z-index: 15;
+    top: 0;
+    right: auto;
+    bottom: auto;
+    left: 0;
+    height: 1px;
+    display: none;
+    width: 100%;
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+}
+.md .list ul:after {
+    content: '';
+    position: absolute;
+    display: block;
+    z-index: 15;
+    top: 0;
+    right: auto;
+    bottom: auto;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    display:none;
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+}
+      .left-bars {
+    height: 100%;
+    width: 77px;
+    padding: 20px;
+    margin-top: 4px;
+    margin-right: 20px;
+    margin-left: -10px;
+}
+#video
+{
+  margin-bottom: 80px;
+  margin-top: 100px;
+}
+    </style>
+
+   
+</body>
+</html>

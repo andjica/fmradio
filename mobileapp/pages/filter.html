@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="white">
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Your app title -->
+    <title>My App</title>
+    <!-- Path to Framework7 Library CSS -->
+     
+    <link rel="stylesheet" href="../framework7/css/framework7.min.css">
+
+    <!-- Path to Fontawesome style-->
+    <link rel="stylesheet" href="../css/font-aw/css/all.css">
+    <link rel="stylesheet" href="../css/font-aw/css/fontawesome.css">
+   
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/reviews.css">
+    <link rel="stylesheet" href="../css/filter.css">
+
+    <!-- Chart.JS -->
+    
+
+  </head>
+  <body>
+    <!-- App root element -->
+    <div id="app">
+      
+         <div class="panel panel-left panel-reveal"  style="width:380px; background: #1B1B1B; ">
+            <div class="content-block">
+           
+              <a class="panel-close" href="/index/" style="margin-left:40px;">
+			  <img src="../images/crosic.png" class="crs">
+             </a>
+           
+              <div class="list no-hairlines-between no-hairlines">
+                    <ul style="margin-top:42px; margin-left:40px;">
+                           <li class="padding  "><a class=" link external" href="./reviews.html" style="color: white; padding: 6px!important;"> Home</a></li>
+                            <li class="padding "><a class=" link external" href="./video.html" style="color: white; padding: 6px!important;"> Video stream</a></li>
+                            <li class="padding "><a class=" link external" href="./filter.html" style="color: white; padding: 6px!important;"> Playlist</a></li>
+            <!--<li class="padding "><a class=" link external" href="./menu2.html" style="color: white; 6px!important;"> Nieuwe Muziek</a></li>-->							
+                            <li class="padding"><a class=" link external" href="./menu.html" style="color: white; padding: 6px!important;"> Hiphop nieuws</a></li>
+							<li class="padding"><a class=" link external" href="#" style="color: white; padding: 6px!important;"> Privacy</a></li>
+				   </ul>
+                </div>
+                
+            </div>
+            <img src="../images/IcontvLogoWhite.svg "class"iconlogo">
+          </div>      <!-- Statusbar overlay -->
+    
+
+     
+      <!-- Statusbar overlay -->
+      <div class="statusbar"></div>
+
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+      
+          <!-- Scrollable page content -->
+        <div class="page-content infinite-scroll-content" style="background-color:#1B1B1B !important;">
+		<div class="toolbar toolbar-top" style="">
+			<div class="toolbar-inner" style="background:#1B1B1B;     height: 60px !important;">
+				<a class="panel-open" style="margin-left: 10px;" href="#" data-panel="left">
+                    <img src="../images/barsic.png"  class="left bars-img"/></a>
+                    <center>
+                    <h3 class="playlist-h3">Playlist</h3>
+                    </center>
+
+                    <a class="link right"><img src="../images/jatoch.png" class="img-jatoch"></a>
+                        
+				</div>
+			</div>
+           <div class="page" data-name="menu">
+            <div class="page-content" style="background-color:#1B1B1B; overflow:none;">
+                <div class="block">
+                  <div class="row">
+                    <div class="list media-list prikaz-liste">
+                        <center style="margin-top: 80px; color: white; margin-bottom: -30px;"><h3>Recent played tracks</h3></center>
+                    <ul id="prikaz-svih">
+                
+                    </ul>
+                  </div>
+	            </div>
+            <div class="row bottom col-100" id="bitno">
+                <div id="rj-player" style="  width: 100%;  display: inline-flex;">
+                  <img src="../images/IconradioLogo.svg" class="content-left col-33 danny">
+                  <div class="content-center col-44 probaja">
+                    <p id="songic" style="text-align:center;"></p>
+
+                  </div>
+                <audio id="audio" style="width:100px; margin-top:10px;"  preload="auto" tabindex="0" controls="" type="audio/mpeg">
+                    <source type="audio/mp3" src="" id="audio-2">
+                </audio>
+                <ul id="playlist" style="display:none">
+                    <li class="active">
+                        <a href="" id="active-link"></a>
+                    </li>
+                    <div id="all-songs">
+                           
+                    </div>
+                </ul>
+        
+              </div>
+                
+            </div>
+
+        </div>
+		</div>
+        </div>
+    </div>
+</div>
+</div>
+    <!-- Path to Framework7 Library JS-->
+	
+    <script type="text/javascript" src="../framework7/js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script src="../js/app.js"></script>
+    <script defer src="../css/font-aw/js/all.js"></script>
+    <script defer src="../css/font-aw/js/fontawesome.js"></script>   
+    <script type="text/javascript" src="../js/panel.js"></script>
+    <script type="text/javascript" src="../js/main-radio.js"></script>
+    <script>
+        var app = new Framework7();
+        var $$ = Dom7;
+
+        app.request.get('http://mijnautoadverteren.nl/moderne-woningen/php/get-playlist.php', function(data){
+            var all = JSON.parse(data);
+            console.log(all);
+            var text = ``;
+            all.forEach(function(element){
+                text+= `<li>
+                          <div class="item-inner">
+                            <div class="item-title-row">
+                              <div class="item-title text-songname">${element['songName']}</div>
+                            </div>
+                            <div class="item-subtitle text-artistname">
+                             ${element['artist_name']}
+                            </div>
+                            <div class="item-text"></div>
+                          </div>
+                        </li>`;
+            })
+            document.getElementById('prikaz-svih').innerHTML = text;
+            
+        });
+
+    </script>
+
+    <script>
+      var app = new Framework7();
+
+      var $$ = Dom7;
+
+    $$(document).on("click", ".andjica", function(){
+
+      var catchId = $$(this).data('id');
+
+      console.log(catchId);
+
+      app.request.post('http://mijnautoadverteren.nl/moderne-woningen/php/get-id.php', { catchId : catchId }, function(data){
+
+          var id = JSON.parse(data);
+          console.log(data);
+
+          $$('#idSong').html(id.idSong);
+         
+          $$('#mySong').html(id.idSong);
+          var video = id['urlSong'];
+          var path = "http://mijnautoadverteren.nl/moderne-woningen/webapp/";
+          document.getElementById('mySong').src = path + video;
+        
+          $$('#artistName').html(id.artist);
+          $$('#artistSong').html(id.songName);
+          });
+      // DOM events for my-sheet sheet
+      $$('.my-sheet').on('sheet:open', function (e, sheet) {
+   
+   
+     
+      $$('.my-sheet').on('sheet:opened', function (e, sheet) {
+
+      });
+      
+
+      });
+
+// Create dynamic Sheet
+var dynamicSheet = app.sheet.create({
+
+  content: '<div class="sheet-modal">'+
+              '<div class="toolbar">'+
+                '<div class="toolbar-inner">'+
+                  '<div class="left"></div>'+
+                  '<div class="right">'+
+                    '<a class="link sheet-close">Verberg</a>'+
+                  '</div>'+
+                '</div>'+
+              '</div>'+
+              '<div class="sheet-modal-inner">'+
+                '<div class="block" style="height:0px;">'+
+                  '<p>Sheet created dynamically.</p>'+
+                  '<p><a href="#" class="link sheet-close">Close me</a></p>'+
+                '</div>'+
+              '</div>'+
+            '</div>',
+  // Events
+  on: {
+    open: function (sheet) {
+      console.log('Sheet open');
+    },
+    opened: function (sheet) {
+      console.log('Sheet opened');
+    },
+  }
+});
+// Events also can be assigned on instance later
+dynamicSheet.on('close', function (sheet) {
+  console.log('Sheet close');
+});
+dynamicSheet.on('closed', function (sheet) {
+  console.log('Sheet closed');
+});
+});
+</script>
+<style scoped>
+#prikaz-svih {
+    margin-top: 65px;
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-bottom: 50px;
+}
+   .bars-img {
+    height: auto;
+    width: 43px;
+    color: black;
+    margin-top: 14px;
+    margin-left: 10px;
+    margin-right: 0px;
+}
+.playlist-h3 {
+    padding: 20px;
+    font-size: 24px;
+    margin-top: 35px;
+    color: white;
+    opacity: 1.0;
+    margin-left: 10px;
+}
+   
+    .img-jatoch {
+    width: auto;
+    height: 38px;
+    float: right;
+    position: relative;
+    margin-top: 6px;
+    z-index: -1000;
+    margin-right: 10px;
+}
+.ios .padding {
+    padding: 1px!important;
+}
+
+.md .list ul:before {
+   display: none;
+}
+.md .list ul:after {
+    display: none;
+}
+</style>
+</body>
+</html>
+     

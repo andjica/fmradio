@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="white">
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+    <!-- Your app title -->
+    <title>My App</title>
+    <!-- Path to Framework7 Library CSS -->
+     
+    <link rel="stylesheet" href="../framework7/css/framework7.min.css">
+
+    <!-- Path to Fontawesome style-->
+    <link rel="stylesheet" href="../css/font-aw/css/all.css">
+    <link rel="stylesheet" href="../css/font-aw/css/fontawesome.css">
+   
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/reviews.css">    
+
+  </head>
+  <body>
+    <!-- App root element -->
+    <div id="app">
+    <div class="panel panel-left panel-reveal"  style="width:380px; background: #1B1B1B; ">
+            <div class="content-block">
+           
+              <a class="panel-close" href="/index/" style="margin-left:40px;">
+			  <img src="../images/crosic.png" class="crs-img">
+             </a>
+           
+              <div class="list no-hairlines-between">
+                    <ul style="margin-top:42px; margin-left:40px;">
+                           <li class="padding  "><a class=" link external" href="./reviews.html" style="color: white; padding: 6px!important;"> Home</a></li>
+                            <li class="padding "><a class=" link external" href="./video.html" style="color: white; padding: 6px!important;"> Video stream</a></li>
+                            <li class="padding "><a class=" link external" href="./filter.html" style="color: white; padding: 6px!important;"> Playlist</a></li>
+                            <li class="padding"><a class=" link external" href="./menu.html" style="color: white; padding: 6px!important;"> Hiphop nieuws</a></li>
+							              <li class="padding"><a class=" link external" href="#" style="color: white; padding: 6px!important;"> Privacy</a></li>
+				            </ul>
+                </div>
+                
+            </div>
+            <img src="../images/IcontvLogoWhite.svg" class="icontv-logo">
+          </div> 
+        <div class="statusbar"></div>
+
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+
+          <!-- Scrollable page content -->
+        <div class="page-content infinite-scroll-content" style="background-color:white;">
+         <div class="toolbar toolbar-top">
+					<div class="toolbar-inner" style="background:#1B1B1B;     height: 60px !important;">
+					   <a class="panel-open" style="    margin-left: 10px;" href="#" data-panel="left">
+					    <img src="../images/barsic.png"  class="left left-ba"/></a>
+              <center>
+              <h3 class="hp-ns">Hiphop Nieuws</h3>
+              </center>
+              <a class="link right"><img src="../images/jatoch.png" class="jat-ch"></a>
+					  </div>
+				  </div>
+        <div class="page" data-name="menu">
+        <div class="page-content" style="background-color:white; overflow:none;">
+                 
+        <div id="rj-player" style="margin-top:20px;">
+          <div id="first">
+
+          </div>
+        </div>
+        <div class="row" id="all" style=" margin-top: 381px;">
+
+        </div>
+ 
+        <div class="row bottom col-100" id="bitno">
+            <div id="rj-player" style="  width: 100%;  display: inline-flex;">
+              <img src="../images/IconradioLogo.svg" class="content-left col-33 danny">
+              <div class="content-center col-44 probaja">
+                <p id="songic" style="text-align:center;"></p>
+
+              </div>
+            <audio id="audio" style="width:100px; margin-top:10px;"  preload="auto" tabindex="0" controls="" type="audio/mpeg">
+                <source type="audio/mp3" src="" id="audio-2">
+            </audio>
+            <ul id="playlist" style="display:none">
+                <li class="active">
+                    <a href="" id="active-link"></a>
+                </li>
+                <div id="all-songs">
+                       
+                </div>
+            </ul>
+    
+          </div>
+            
+        </div>
+
+        </div>
+        <div class="popup popup-about">
+            <div class="toolbar toolbar-top" style="">
+                  <div class="toolbar-inner" style="background:#1B1B1B;     height: 60px !important;">
+                    <a class="panel-open  link external" href="./menu.html" >
+                    <img src="../images/crosic.png" class="left crs-two"/></a>
+                  <center>
+                  <h3 class="hajde">Hiphop Nieuws</h3>
+                  </center>
+                  <a class="link right"><img src="../images/jatoch.png" class="hajdemo"></a>
+                    
+                  </div>
+                  </div>
+          <div class="block">
+  
+          <img src="" id="img-new" style="width: 100%;">
+          <h3 id="title-new2"></h3>
+          <p id="desc-new" style=" font-size: 100%; height:100%;  padding: 10px;
+          text-align: justify; "></p>
+  </div>
+ 
+</div>
+
+
+
+
+
+
+
+ 
+
+ 
+              </div>
+
+            </div>
+
+            </div>
+            </div>
+            
+
+
+
+    
+    <!-- Path to Framework7 Library JS-->
+	
+  <script type="text/javascript" src="../framework7/js/framework7.min.js"></script>
+  <!-- Path to your app js-->
+  <script type="text/javascript" src="../js/app.js"></script>
+    <script defer src="../css/font-aw/js/all.js"></script>
+    <script defer src="../css/font-aw/js/fontawesome.js"></script>   
+    <script type="text/javascript" src="../js/main-radio.js"></script>
+    <script type="text/javascript" src="../js/panel/js"></script>
+    <script>
+      app.request.post('http://www.mijnautoadverteren.nl/moderne-woningen/php/news-one.php', function(data){
+        var newsOne = JSON.parse(data);
+        console.log(newsOne);
+
+        var text = ``;
+        newsOne.forEach(function(element)
+        {
+          text+= `
+          <div class="player-v31 player-large1">
+            <div id="rj-cover12" style="  margin-bottom: 22px;  margin-top: -59px;  z-index: -1;   position: absolute;">
+              <a href="" class="paralax">
+            <img src="http://www.mijnautoadverteren.nl/moderne-woningen/webapp/${element['image']}" style=" height: 343px; margin-top: 50px;  width: 100%;"/></a>
+            </div>
+          </div>
+          
+          <div id="overlay">
+          <a href="#" style="color:white;" data-popup=".my-popup" class="popup-open">
+          <h2 style="   height: 50px;
+    text-align: center;
+    line-height: 53px;
+    background: #2F2929;
+    filter: opacity(0.7);
+    position: absolute;
+    width: 100%;
+    margin-top: 285px;
+    font-weight: 500;
+    color: white;">${element['title']}<h2>
+              <p style="display:none;">${element['description']}</p>
+              
+          </a>
+        
+          </div>
+        `;
+        });
+        document.getElementById('first').innerHTML=text;
+      });
+      app.request.post('http://www.mijnautoadverteren.nl/moderne-woningen/php/news-all.php', function(data){
+        var all = JSON.parse(data);
+        console.log(all);
+        var text = ``;
+        all.forEach(function(element)
+        {
+          text+= `
+          <div class="col-40"><img src="http://www.mijnautoadverteren.nl/moderne-woningen/webapp/${element['image']}" style="    width: 143px;   height: 150px;     margin-left: 10px;"></div>
+
+            <div class="col-60"  style="padding-right: 10px;
+    padding-left: 14px;
+    margin-bottom: 10px;">
+            <h4 style="margin-bottom:-10px; letter-spacing:1px;
+    MARGIN-TOP: 5PX;     text-align: left;">${element['title']}</h4>
+
+            <p style="text-align: left; COLOR:GRAY;font-size: 11px;      text-align: justify;">${element['description']}</p>
+            <div class="row" style="      MARGIN-TOP: -24PX;
+      display: inline-flex; line-height: normal; float: left;">
+              <div class="col-22">
+              <h5 style="    float: left;">IconTV News</h5>
+                </div>
+                <div class="col-22">
+            <a class="link-news link popup-open" href="#"  data-id="${element['id']}" data-popup=".popup-about" style="color:#951111; float: left;   margin-top: 17px;  margin-left: 20px; ">Read more</a>
+            </div>
+            </div>
+            </div>
+           
+        `;
+        });
+        document.getElementById('all').innerHTML=text;
+      });
+
+      $$(document).on("click", ".link-news", function(){
+
+        var catchId = $$(this).data('id');
+        
+        console.log(catchId);
+
+        app.request.post("http://mijnautoadverteren.nl/moderne-woningen/php/get-one-new.php", {catchId : catchId}, function(data){
+          var id = JSON.parse(data);
+            console.log(data);
+            var image = id.image;
+            var path = "http://www.mijnautoadverteren.nl/moderne-woningen/webapp/";
+            document.getElementById('img-new').src = path+image;
+           
+            $$('#title-new').html(id.title);
+           $$('#desc-new').html(id.description);
+
+        });
+      });
+
+    </script>
+    <script>
+      var app = new Framework7();
+
+var $$ = Dom7;
+
+// DOM events for About popup
+$$('.popup-about').on('popup:open', function (e, popup) {
+  console.log('About popup open');
+});
+$$('.popup-about').on('popup:opened', function (e, popup) {
+  console.log('About popup opened');
+});
+
+// Create dynamic Popup
+var dynamicPopup = app.popup.create({
+  content: '<div class="popup">'+
+              '<div class="block">'+
+                '<p>Popup created dynamically.</p>'+
+                '<p><a href="#" class="link popup-close">Close me</a></p>'+
+              '</div>'+
+            '</div>',
+  // Events
+  on: {
+    open: function (popup) {
+      console.log('Popup open');
+    },
+    opened: function (popup) {
+      console.log('Popup opened');
+    },
+  }
+});
+// Events also can be assigned on instance later
+dynamicPopup.on('close', function (popup) {
+  console.log('Popup close');
+});
+dynamicPopup.on('closed', function (popup) {
+  console.log('Popup closed');
+});
+
+// Open dynamic popup
+$$('.dynamic-popup').on('click', function () {
+  dynamicPopup.open();
+});
+
+// Create Popup with swipe to close
+var swipeToClosePopup = app.popup.create({
+  el: '.popup-swipe-to-close',
+  swipeToClose: true,
+});
+
+// Create Popup with swipe to close handler
+var swipeToClosePopup = app.popup.create({
+  el: '.popup-swipe-to-close-handler',
+  swipeToClose: true,
+  swipeHandler: '.my-swipe-to-close-handler',
+});
+    </script>
+
+
+
+<style scoped>
+  .left-ba
+  {
+    height: auto;
+    width: 35px;
+    padding: 20px;
+    margin-top: 4px;
+    margin-right: 40px;
+  }
+  .crs-img
+  {
+    height: 32px;
+    margin-top: 20px;
+  }
+  .icontv-logo
+  {
+    height: 120px;
+    height: 400px;
+    transform: rotate(10deg);
+    width: 100%;
+  }
+  .hp-ns
+  {
+    margin-left: -35px;
+    font-size: 20px;
+    margin-top: 26px;
+    color: white;
+    opacity: 1.9;
+  }
+  
+  .crs-two
+  {
+    height: auto;
+    width: 35px;
+    padding: 0px;
+    margin-top: 4px;
+    margin-right: 40px;
+    margin-left: 10px;
+  }
+  .hajde
+  {
+    margin-left: -20px;
+    font-size: 20px;
+    margin-top: 26px;
+    color: white;
+    opacity: 1.9;
+  }
+  .hajdemo
+  {
+    width: 72px;
+    height: 50px;
+    float: right;
+    position: relative;
+    margin-top: -1px;
+    z-index: -1000;
+    padding: 10px;
+  }
+  .md .list ul:before {
+   display: none;
+}
+.md .list ul:after {
+    display: none;
+}
+  .title-new2
+  {
+    text-align: center; position: absolute;
+      margin-top: -57px;
+      width: 100%;
+      background: #2F2929;
+      height: 50px;
+      line-height: 51px;
+      color: white;
+      filter: opacity(0.7);
+  }
+
+ .jat-ch {
+    width: 70px;
+    height: 59px;
+    float: right;
+    position: relative;
+    margin-top: -1px;
+    z-index: -1000;
+    margin-left: -18px;
+    padding: 10px;
+    margin-right: -10px;
+}
+.left-ba {
+    height: auto;
+    width: 83px;
+    padding: 20px;
+    margin-top: 4px;
+    margin-right: 20px;
+    margin-left: -15px;
+}
+</style>
+</body>
+</html>
