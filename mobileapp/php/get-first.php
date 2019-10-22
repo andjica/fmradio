@@ -1,5 +1,7 @@
 <?php
-     header('Content-Type: application/json; Charset=UTF-8');
+
+    header("Access-Control-Allow-Origin: *");
+    header('Content-Type: application/json; Charset=UTF-8');
 
      $q = "SELECT s.id AS songId, s.song_url, s.song_name AS songName 
      FROM songs s INNER JOIN playlists_songs pl

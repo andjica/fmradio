@@ -1,4 +1,5 @@
 <?php
+    header("Access-Control-Allow-Origin: *");
      header('Content-Type: application/json; Charset=UTF-8');
 
      $q = "SELECT * FROM news LIMIT 1";

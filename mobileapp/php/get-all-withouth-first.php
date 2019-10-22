@@ -1,5 +1,7 @@
 <?php
-     header('Content-Type: application/json; Charset=UTF-8');
+    
+    header("Access-Control-Allow-Origin: *");
+    header('Content-Type: application/json; Charset=UTF-8');
 
      $q = "SELECT s.id as idSong, s.song_name AS SongName, 
      s.active_img, s.song_url AS urlSong
