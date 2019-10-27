@@ -1,9 +1,9 @@
 <?php
 
-    require_once "config.php";
-    
+    header("Access-Control-Allow-Origin: *");
     
 
+    require_once "config.php";
     try{
         $connection = new PDO("mysql:host=".SERVER.";dbname=".DATABASE.";charset=utf8", USERNAME, PASSWORD);
         $connection->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
